@@ -6,11 +6,12 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item ZETHICS_PROFILE_PICTURE = registerItem("zethics_profile_picture",
-            new Item(new FabricItemSettings().maxDamage(999).group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(20).saturationModifier(0.9f).build())));
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(20).saturationModifier(0.9f).build()).maxCount(128).rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier("shruli", name), item);
