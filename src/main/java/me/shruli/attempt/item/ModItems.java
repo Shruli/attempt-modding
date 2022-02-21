@@ -18,7 +18,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        AttemptMod.LOGGER.info("Item registration happening right now like right now right now.");
+        AttemptMod.LOGGER.info("Item registration happening right now like right now right now...");
     }
 
 }
