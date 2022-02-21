@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "shruli",
+  "version": "${version}",
+
+  "name": "Attempt",
+  "description": "The most terrible attempt at creating a mod",
+  "authors": [
+    "Shruli"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Shruliiii",
+    "sources": "https://github.com/Shruliiii/attempt"
+  },
+
+  "license": "MIT",
+  "icon": "assets/attempt/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.shruli.attempt.AttemptMod"
+    ]
+  },
+  "mixins": [
+    "attempt.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
