@@ -1,6 +1,7 @@
 package me.shruli.attempt.block;
 
 import me.shruli.attempt.AttemptMod;
+import me.shruli.attempt.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -19,7 +20,7 @@ public class ModBlocks {
 
     public static final Block ZETHICS_BLOCK = foodEffBlock("zethics_block",
             new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f).requiresTool()),
-            ItemGroup.FOOD,
+            ModItemGroup.SHRULI,
             1,
             StatusEffects.INSTANT_DAMAGE
     );
