@@ -16,7 +16,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.SHRULI).food(new FoodComponent.Builder().hunger(20).saturationModifier(0.9f).build()).maxCount(128).rarity(Rarity.EPIC))
     );
 
-    public static final Item LEAN = registerItem("lean",
+    public static final Item GRAPE_JUICE = registerItem("grape_juice",
             new Item(new FabricItemSettings().group(ModItemGroup.SHRULI).food(new FoodComponent.Builder().hunger(20).saturationModifier(0.9f).statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 5, 10), 1.0F).build()).maxCount(128).rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
